@@ -16,12 +16,14 @@ public class Tester_LooseCoupling {
         a1.display();
     }
 }
+
 interface Show {
     public void display();
 }
 
 class A1 {
     Show s;
+
     public A1(Show s) {
         //s is loosely coupled to A
         this.s = s;
@@ -34,14 +36,18 @@ class A1 {
 }
 
 class B1 implements Show {
-    public B1(){}
+    public B1() {
+    }
+
     public void display() {
         System.out.println("B");
     }
 }
 
 class C implements Show {
-    public C(){}
+    public C() {
+    }
+
     public void display() {
         System.out.println("C");
     }

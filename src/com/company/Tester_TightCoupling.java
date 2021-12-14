@@ -7,20 +7,24 @@ public class Tester_TightCoupling {
     }
 }
 
-class A{
+class A {
     B b;
-    public A(){
-        b= new B();
+
+    public A() {
+        b = new B();
     }
-    public void display(){
+
+    public void display() {
         System.out.println("A");
         b.display();
     }
 }
 
-class B{
-    public B(){}
-    public void display(){
+class B {
+    public B() {
+    }
+
+    public void display() {
         System.out.println("B");
     }
 }
